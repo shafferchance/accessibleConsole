@@ -1,4 +1,4 @@
-#model {
+#content-space {
     display: flex;
     justify-content: space-between;
     height: 30vh;
@@ -7,7 +7,7 @@
   .console-main {
     position: absolute;
     overflow: auto;
-    width: 100vw;
+    width: 99vw;
     height: 30vh;
     background: black;
   }
@@ -38,6 +38,10 @@
     color: white;
   }
 
+  /*
+    Emulating the blinking on terminal and acts as a
+    marker of where to click
+  */
   .blink {
     animation: blink 1s steps(3, start) infinite 
   }

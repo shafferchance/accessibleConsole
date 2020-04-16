@@ -5,21 +5,26 @@
     <meta name="viewport" content="width=device-width">
     <title>JS Bin</title>
     <link rel="stylesheet" href="css/index.css">
-    <script src="javascript/index.js"></script>
+    <script src="javascript/index.js" type="module"></script>
   </head>
   <body>
-    <div id="model">
+    <div role="region" id="content-space">
+      <!-- 
+        As this will be generated content a JS test will be made to verify and attempt to
+        accessibility although this will be limited in scope and ability due to the ambigiuty
+        of the question.
+      -->
       <div class="entry">Entry 1</div>
       <div class="queue">Queue 1</div>
       <div class="process">Process 1</div>
       <div class="exit">Exit 1</div>
     </div>
     <hr id="console-height">
-    <div role="region" id="console" aria-label="command line" class="console-main">
+    <div role="region" id="console" aria-label="Console Display" class="console-main">
       <div class="cmd-0">Hello welcome to DES Command Line</div>
       <div class="console-input-area">
         <div class="console-cursor"></div>
-        <input class="console-input" type="text"></input>
+        <input aria-label="Command Input" class="console-input" type="text"></input>
       </div>
     </div>
   </body>
