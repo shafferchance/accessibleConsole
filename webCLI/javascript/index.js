@@ -100,7 +100,7 @@ window.addEventListener("load", () => {;
                     
                 }
 
-                if (arg[i].match("--id"))
+                // if (arg[i].match("--id"))
             }
         }
     }
